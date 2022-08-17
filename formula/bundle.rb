@@ -5,19 +5,19 @@ class Bundle < Formula
   homepage "https://bitbucket.org/microblink/bundle"
   on_linux do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.8/bundle-linux-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.9/bundle-linux-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.8/bundle-linux-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.9/bundle-linux-amd64.gz"
     end
   end
 
   on_macos do
     on_arm do
-        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.8/bundle-darwin-arm64.gz"
+        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.9/bundle-darwin-arm64.gz"
     end
     on_intel do
-        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.8/bundle-darwin-amd64.gz"
+        url "https://build-artifacts.mle.microblink.com/bundle/v0.3.9/bundle-darwin-amd64.gz"
     end
   end
 
@@ -41,7 +41,7 @@ class Bundle < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "version-lt version 0.3.8", shell_output("#{bin}/bundle -v", 2)
+    assert_match "version-lt version 0.3.9", shell_output("#{bin}/bundle -v", 2)
   end
 
 end
